@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ragam Kesenian</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/style_h&t.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="icon" type="image/png" sizes="96x96" href="Gambar/icon.png">
+        <style>
+          .image1,
+          .image2 {
+            display: block;
+            width: 100%;
+            box-shadow: 2px 1px 10px rgba(255, 255, 255, 0.6);
+          }
+          .image_box{
+            position: relative;
+            overflow: hidden;
+          }
+          .image_box img{
+            object-fit: cover;
+            transition: all 0.5s ease;
+          }
+          .image_box:hover img{
+            transform: scale(1.02);
+          }
+          .image1:hover,.image2:hover,.gambar:hover,.gambar1:hover{
+            filter: brightness(80%);
+          }
+
+          .gambar,
+          .gambar1 {
+            display: block;
+            width: 100%;
+            background-color: aquamarine;
+          }
+          .gambar1 {
+            height: 200px;
+          }
+          .ragam {
+ color: black;
+ padding: 30px 0;
+}
+.green{
+ border-bottom: 6px solid #4fb03f;
+}
+.link{
+ width: 150px;
+ height: 40px;
+ border: none;
+ outline: none;
+ background-color:#4fb03f;
+ transition: .5s;
+}
+.link:hover{
+ background-color: #3c922e;
+ transition: .5s;
+}
+.ragam h6{
+  color: #3c922e;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+          
+          @media (max-width: 500px) {
+            .gambar1 {
+              width: 50%;
+              order: 1;
+              margin-left: 10px;
+            }
+            .gambar1 {
+            height: 180px;
+          }
+            .seratan1{
+              width: 100%;
+              line-height: 1;
+            }
+            .seratan h5{
+              width: 100%;
+              line-height: 1.5;
+            }
+            
+            .crit {
+              display: flex;
+            }
+            .tittle{
+              font-size: .9em;
+            }
+          }
+          </style>
+      </head>
+<body>
+  <div class="hijau"></div>
+  <header class="navbari" id="navbar">
+    <div class="brand">
+      <a href="home.html"><img src="Gambar/MAC.png" width="170"  alt=""> </a>
+    </div>
+    <nav>
+      <a href="home.html" class="home">Home</a>
+      <div class="subnav">
+        <button class="subnavbtn" onclick="myFunction()">Ragam Seni <i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown" class="subnav-content">
+          <a href="ragam.html">Seni Tari</a>
+          <a href="ragam.html">Seni Musik</a>
+          <a href="ragam.html">Seni Tilawah</a>
+          <a href="ragam.html" style="margin-right: 13.8%;">Seni Kaligrafi</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn" onclick="myFunction()">Galeri <i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown" class="subnav-content">
+          <a href="galery.html">Foto</a>
+          <a href="galery.html" style="margin-right: 30%">Vidio</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn" onclick="myFunction()">Kegiatan Kami <i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown" class="subnav-content">
+          <a href="">Milad Mifa</a>
+          <a href="">KAMIRA</a>
+          <a href="" style="margin-right: 10.5%">PHBN</a>
+        </div>
+      </div>
+      <a href="kunjungi.html" class="km">Kunjungi Kami</a>
+    </nav>
+    <div class="menu-toggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+
+      <!-- Jumbotron -->
+      <div class="container-fluid jumbo">
+        <div class="container">
+          <div class="row">
+          <p>Ragam Kesenian</p>
+        </div>
+        <div class="row" style="margin-top: -5px;">
+        <span>Pondok Pesantren Miftahul Falah</span>
+      </div>
+      </div>
+      </div>
+      <!-- Akhir Jumbotron -->
+      <!-- Ragam -->
+      <div class="container-fluid ragam">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 image_box">
+              
+              <img src="Gambar/gambus/gambus3.jpg" class="image1 mb-3 green" alt="Gambus Mifa">
+              
+               
+              <div class="seratan1" >
+                <h6>Seni Musik</h6>
+                <h4>Gambus Mifa, Hiburan bernuansa islam dengan syair arab dan shalawat</h4>
+               
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="row mt-4 mt-md-0">
+                <div class="col-md-6 col-6 image_box">
+                  
+                  <img src="Gambar/hadroh/hadroh.jpg" class="image2 mb-3 green"/>
+                  
+                  <div class="seratan1">
+                    <h6>Seni Musik</h6>
+                    <h5>Shalawat Berghairah dengan iringan hadroh</h5>
+                    
+                  </div>
+                </div>
+                <div class="col-md-6  mt-md-0 col-6 image_box">
+                  
+                  <img src="Gambar/marawis/marawis_pi2.jpg" class="image2 green mb-3"/>
+                  
+                    
+                  <div class="seratan1">
+                    <h6>Seni Musik</h6>
+                    <h5>Marawis, Musik tradisional ang diiringi tarian</h5>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-6 col-6 image_box">
+                 
+                  <img src="Gambar/qasidah/qasidah pi.jpg" class="image2 mb-3 green" />
+                  
+                   
+                  <div class="seratan1">
+                    <h6>Seni Musik</h6>
+                    <h5>Qasidah, harmonisasi antara vokal,pukulan dan tarian yang sesuai ketukan</h5>
+                    
+                  </div>
+                </div>
+                <div class="col-md-6 col-6 mt-md-0 image_box">
+                  
+                    <img src="Gambar/acara/milad/qiroat_ll.jpeg" class="image2 mb-3 green" />
+                    
+                     
+                    <div class="seratan1">
+                      <h6>Seni Tilawah</h6>
+                      <h5>Qira'at seni memperindah dalam pembacaan ayat</h5>
+                      
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-3 col-12 image_box crit">
+              
+              <img src="Gambar/acara/milad/tarisaman.jpeg" class="gambar1 mb-3 green" />
+              
+                
+              <div class="seratan">
+                <h6>Seni Tari</h6>
+                <h5>Tari Saman, Harmonisasi gerakan penuh pujian</h5>
+                
+              </div>
+            </div>
+            <div class="col-md-3 col-12 image_box crit">
+              
+              <img src="Gambar/acara/milad/tar.jpeg" class="gambar1 mb-3 green" />
+              
+               
+              <div class="seratan">
+                <h6>Seni Tari</h6>
+                <h5>Tari Japin. Kekompakan dan keseruan dalam gerakan</h5>
+                
+              </div>
+            </div>
+            <div class="col-md-3 col-12 image_box crit">
+              
+              <img src="Gambar/tari/tari adat.jpg" class="gambar1 mb-3 green" />
+              
+               
+              <div class="seratan">
+                <h6>Seni Tari</h6>
+                <h5>Tari Adat, tarian khidmat beriring shalawat</h5>
+                
+              </div>
+            </div>
+            <div class="col-md-3 col-12 image_box crit">
+              
+                <img src="Gambar/kaligrafi/kaligrafi1.jpg" class="gambar1 green mb-3"/>
+                
+                  
+                <div class="seratan">
+                  <h6>Seni Kaligrafi</h6>
+                  <h5>Keindahan dalam penulisan ayat ayat suci</h5>
+                  
+                </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <!-- akahir ragam -->
+      <!-- footer -->
+      <div class="container-fluid footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-12  mb-3 mb-md-0" >
+              <center>
+              <a href="home.html"> <img src="Gambar/MAC1.png" class="img-fluid" style="margin-top: -20px;" alt=""></a>
+              </center>
+            </div>
+            <div class="col-md-8 menu_footer">
+              <div class="nav-footer">
+                <a href="" class="navfotbtn">Ragam Seni</a>
+                <div class="nav-footer-content">
+                  <ul>
+                    <li><a href="ragam.html">Kaligrafi</a></li>
+                    <li><a href="ragam.html">Seni Musik</a></li>
+                    <li><a href="ragam.html">Seni Tari</a></li>
+                    <li><a href="ragam.html">Seni Tilawah</a></li>
+                  </ul>
+                </div>
+              </div>
+            <div class="nav-footer">
+              <a href="" class="navfotbtn">Kegiatan Kami</a>
+              <div class="nav-footer-content">
+                <ul>
+                  <li><a href="">Milad MIFA</a></li>
+                  <li><a href="">PHBN</a></li>
+                  <li><a href="">KAMIRA</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-footer">
+              <a href="https://www.instagram.com/miftahulfalah.ss/" target="blank" class="navfotbtn">Ikuti Kami</a>
+              <div class="nav-footer-content">
+                <ul>
+                  <li><a href="https://www.facebook.com/miftahulfalah.ss" target="blank">Facebook</a></li>
+                  <li><a href="https://www.instagram.com/miftahulfalah.ss/" target="blank">Instagram</a></li>
+                  <li><a href="https://www.youtube.com/channel/UCw4eg6xeUFsQPmDSS4_sZgA" target="blank">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-footer">
+              <a href="kunjungi.html" class="navfotbtn">Kunjungi Kami</a>
+              <div class="nav-footer-content">
+                <ul>
+                  <li><a href="">Tentang Kami</a></li>
+                  <li><a href="">Grup Seni Mifa</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="nav-footer">
+              <a href="galery.html" class="navfotbtn">Galeri</a>
+              <div class="nav-footer-content">
+                <ul>
+                  <li><a href="galery.html">Foto</a></li>
+                  <li><a href="galery.html">Vidio</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="container-fluid akhir">
+    <div class="garis"></div>
+  <div class="container">
+    <div class="copy">
+      <p>Copyright &copy; Mifa 2022</p>
+    </div>
+  </div>
+  </div>
+      <!-- akhir footer -->
+      
+      <script src="script.js"></script>
+</body>
+</html>

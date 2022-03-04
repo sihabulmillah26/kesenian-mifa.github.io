@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galeri Seni</title>
+        <link rel="stylesheet" href="css/galeri.css" />
+        <link rel="stylesheet" href="css/style_h&t.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <!-- Boottrap -->
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- Fancy -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <!-- fancy -->
+        <link rel="icon" type="image/png" sizes="96x96" href="Gambar/icon.png">
+        <style>
+          .image1,
+          .image2 {
+            display: block;
+            width: 100%;
+            box-shadow: 2px 1px 10px rgba(255, 255, 255, 0.6);
+          }
+          .gambar,
+          .gambar1 {
+            display: block;
+            width: 100%;
+            background-color: aquamarine;
+          }
+          .gambar1 {
+            height: 200px;
+          }
+          @media (max-width: 500px) {
+            .gambar1 {
+              width: 50%;
+              order: 1;
+              margin-left: 10px;
+            }
+            .seratan1{
+              width: 100%;
+              font-size: 0.9em;
+            }
+            .seratan {
+              width: 50%;
+              font-size: 0.9em;
+            }
+            .crit {
+              display: flex;
+            }
+          }
+          </style>
+      </head>
+<body>
+    <div class="hijau"></div>
+    <header class="navbari" id="navbar">
+      <div class="brand">
+        <a href="home.html"><img src="Gambar/MAC.png" width="170"  alt=""> </a>
+      </div>
+      <nav>
+        <a href="home.html" class="home">Home</a>
+        <div class="subnav">
+          <button class="subnavbtn" onclick="myFunction()">Ragam Seni <i class="fa fa-caret-down"></i></button>
+          <div id="myDropdown" class="subnav-content">
+            <a href="ragam.html">Seni Tari</a>
+            <a href="ragam.html">Seni Musik</a>
+            <a href="ragam.html">Seni Tilawah</a>
+            <a href="ragam.html" style="margin-right: 13.8%;">Seni Kaligrafi</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn" onclick="myFunction()">Galeri <i class="fa fa-caret-down"></i></button>
+          <div id="myDropdown" class="subnav-content">
+            <a href="galery.html">Foto</a>
+            <a href="galery.html" style="margin-right: 30%">Vidio</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn" onclick="myFunction()">Kegiatan Kami <i class="fa fa-caret-down"></i></button>
+          <div id="myDropdown" class="subnav-content">
+            <a href="">Milad Mifa</a>
+            <a href="">KAMIRA</a>
+            <a href="" style="margin-right: 10.5%">PHBN</a>
+          </div>
+        </div>
+        <a href="kunjungi.html" class="km">Kunjungi Kami</a>
+      </nav>
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+      <!-- Jumbotron -->
+      <div class="container-fluid jumbo">
+        <div class="container">
+          <div class="row">
+          <p>Galeri Seni</p>
+        </div>
+        <div class="row" style="margin-top: -5px;">
+        <span>Pondok Pesantren Miftahul Falah</span>
+      </div>
+      </div>
+      </div> 
+      <!-- Akhir Jumbotron -->
+      <!-- Galeri -->
+      <input type="radio" name="photo" id="check1" checked>
+      <input type="radio" name="photo" id="check2">
+      <input type="radio" name="photo" id="check3">
+      <input type="radio" name="photo" id="check4">
+      <input type="radio" name="photo" id="check5">
+      <input type="radio" name="photo" id="check6">
+
+
+      <div class="container-fluid">
+        <div class="container">
+          <div class="top-content">
+            <label for="check1">All</label>
+            <label for="check2">Tilawah</label>
+            <label for="check3">Kaligrafi</label>
+            <label for="check4">Tari</label>
+            <label for="check5">Musik</label>
+            <label for="check6">Vidio</label>
+          </div>
+        
+        <div class="photo-gallery">
+          <div class="pic tilawah">
+            <a href="Gambar/acara/milad/qiroat_ll.jpeg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/acara/milad/qiroat_ll.jpeg" alt="">
+            </a>
+          </div>
+          <div class="pic kaligrafi">
+            <a href="Gambar/kaligrafi/kali3.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/kaligrafi/kali3.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic tari">
+            <a href="Gambar/acara/milad/tarisaman.jpeg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/acara/milad/tarisaman.jpeg" alt="">
+            </a>
+          </div>
+          <div class="pic musik">
+            <a href="Gambar/qasidah/pi1.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/qasidah/pi1.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic vidio">
+            <a href="https://www.youtube.com/embed/553PDg4NoHQ" class="fancybox" data-fancybox="gallery1">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/553PDg4NoHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+          </div>
+          <div class="pic musik">
+            <a href="Gambar/gambus/hfd.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/gambus/hfd.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic tilawah">
+            <a href="Gambar/acara/agung.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/acara/agung.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic kaligrafi">
+            <a href="Gambar/kaligrafi/kali1.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/kaligrafi/kali1.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic tari">
+            <a href="Gambar/tari/ta1.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/tari/ta1.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic musik">
+            <a href="Gambar/marawis/mrs.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/marawis/mrs.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic vidio">
+            <a href="vidio/gambus.mp4" class="fancybox" data-fancybox="gallery1">
+              <video controls src="vidio/gambus.mp4"></video>
+            </a>
+          </div>
+          <div class="pic tilawah">
+            <a href="Gambar/qiraat/qiraat.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/qiraat/qiraat.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic musik">
+            <a href="Gambar/marawis/mawaris_pi2.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/marawis/marawis_pi2.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic kaligrafi">
+            <a href="Gambar/kaligrafi/kaligrafi1.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/kaligrafi/kaligrafi1.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic tari">
+            <a href="Gambar/acara/milad/tari japin.jpeg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/acara/milad/tari japin.jpeg" alt="">
+            </a>
+          </div>
+          <div class="pic musik">
+            <a href="Gambar/hadroh/hadroh.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/hadroh/hadroh.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic vidio">
+            <a href="https://www.youtube.com/embed/RkIKYnqm9QA" class="fancybox" data-fancybox="gallery1">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/RkIKYnqm9QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+          </div>
+          <div class="pic musik">
+            <a href="Gambar/gambus/gambus3.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/gambus/gambus3.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic kaligrafi">
+            <a href="Gambar/kaligrafi/karya1.jpeg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/kaligrafi/karya1.jpeg" alt="">
+            </a>
+          </div>
+          <div class="pic vidio">
+            <a href="vidio/murotal.mp4" class="fancybox" data-fancybox="gallery1">
+              <video controls src="vidio/murotal.mp4"></video>
+            </a>
+          </div>
+          <div class="pic vidio">
+            <a href="vidio/qiraat.mp4" class="fancybox" data-fancybox="gallery1">
+              <video controls src="vidio/qiraat.mp4"></video>
+            </a>
+          </div>
+          <div class="pic vidio">
+            <a href="vidio/kaligrafi1.mp4" class="fancybox" data-fancybox="gallery1">
+              <video controls src="vidio/kaligrafi1.mp4"></video>
+            </a>
+          </div>
+          <div class="pic vidio">
+            <a href="https://www.youtube.com/embed/RxCzhyzmPDM" class="fancybox" data-fancybox="gallery1">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/RxCzhyzmPDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+          </div>
+          
+          <div class="pic vidio">
+            <a href="https://www.youtube.com/embed/4Kx-0XbdlEw" class="fancybox" data-fancybox="gallery1">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4Kx-0XbdlEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+          </div>
+          <div class="pic vidio">
+            <a href="vidio/mifa.mp4" class="fancybox" data-fancybox="gallery1">
+              <video controls src="vidio/mifa.mp4"></video>
+            </a>
+          </div>
+          <div class="pic musik">
+            <a href="Gambar/qasidah/blue2.jpeg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/qasidah/blue2.jpeg" alt="">
+            </a>
+          </div>
+          <div class="pic musik">
+            <a href="Gambar/acara/kamira3.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="Gambar/acara/kamira3.jpg" alt="">
+            </a>
+          </div>
+          <div class="pic vidio">
+            <a href="vidio/hadrohpi.mp4" class="fancybox" data-fancybox="gallery1">
+              <video controls src="vidio/hadrohpi.mp4"></video>
+            </a>
+          </div>
+          <div class="pic vidio">
+            <a href="https://www.youtube.com/embed/oojgTJXMIsI" class="fancybox" data-fancybox="gallery1">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/oojgTJXMIsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- Akhir Galeri -->
+      
+       <!-- footer -->
+       <div class="container-fluid footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-12  mb-3 mb-md-0" >
+              <center>
+              <a href="home.html"> <img src="Gambar/MAC1.png" class="img-fluid" style="margin-top: -20px;" alt=""></a>
+              </center>
+            </div>
+            <div class="col-md-8 menu_footer">
+              <div class="nav-footer">
+                <a href="" class="navfotbtn">Ragam Seni</a>
+                <div class="nav-footer-content">
+                  <ul>
+                    <li><a href="ragam.html">Kaligrafi</a></li>
+                    <li><a href="ragam.html">Seni Musik</a></li>
+                    <li><a href="ragam.html">Seni Tari</a></li>
+                    <li><a href="ragam.html">Seni Tilawah</a></li>
+                  </ul>
+                </div>
+              </div>
+            <div class="nav-footer">
+              <a href="" class="navfotbtn">Kegiatan Kami</a>
+              <div class="nav-footer-content">
+                <ul>
+                  <li><a href="">Milad MIFA</a></li>
+                  <li><a href="">PHBN</a></li>
+                  <li><a href="">KAMIRA</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-footer">
+              <a href="https://www.instagram.com/miftahulfalah.ss/" target="blank" class="navfotbtn">Ikuti Kami</a>
+              <div class="nav-footer-content">
+                <ul>
+                  <li><a href="https://www.facebook.com/miftahulfalah.ss" target="blank">Facebook</a></li>
+                  <li><a href="https://www.instagram.com/miftahulfalah.ss/" target="blank">Instagram</a></li>
+                  <li><a href="https://www.youtube.com/channel/UCw4eg6xeUFsQPmDSS4_sZgA" target="blank">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-footer">
+              <a href="kunjungi.html" class="navfotbtn">Kunjungi Kami</a>
+              <div class="nav-footer-content">
+                <ul>
+                  <li><a href="">Tentang Kami</a></li>
+                  <li><a href="">Grup Seni Mifa</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="nav-footer">
+              <a href="galery.html" class="navfotbtn">Galeri</a>
+              <div class="nav-footer-content">
+                <ul>
+                  <li><a href="galery.html">Foto</a></li>
+                  <li><a href="galery.html">Vidio</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="container-fluid akhir">
+    <div class="garis"></div>
+  <div class="container">
+    <div class="copy">
+      <p>Copyright &copy; Mifa 2022</p>
+    </div>
+  </div>
+  </div>
+      <!-- akhir footer -->
+      
+      <script src="js/script.js"></script>
+</body>
+</html>
