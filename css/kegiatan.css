@@ -11,7 +11,7 @@
     background: linear-gradient(0deg, #fff 0%, #fff 35%, rgba(255,255,255, 0.95) 50%, rgba(255,255,255, 0.85) 60%, rgba(255,255,255, 0.65) 75%, rgba(255,255,255, 0.35) 90%, rgba(255,255,255, 0) 99%);
 }
 .deskripsi .judul{
-    font-size: 1.6em;
+    font-size: 1.3em;
     text-shadow: 3px 2px 1px #3b922e9f;
     text-align: center;
 }
@@ -23,10 +23,11 @@
 .deskripsi iframe{
     border-radius: 10px;
 }
-.galeri h2::after{
+.galeri h3::after{
     content: '';
+    border-radius: 3px;
     display: block;
-    width: 10%;
+    width: 30%;
     border-bottom: 3px solid black;
 }
 .img_gallery{
@@ -63,5 +64,12 @@
     }
     .judul{
         font-size: 2em;
+    }
+    .deskripsi .judul{
+        font-size: 1.6em;
+    }
+    .galeri h3::after{
+        width: 10%;
+        
     }
 }
