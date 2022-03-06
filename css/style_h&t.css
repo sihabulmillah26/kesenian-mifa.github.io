@@ -20,7 +20,7 @@ body::-webkit-scrollbar{
  height: 6px;
  width: 100%;
  background-color: #6ffd32;
- z-index: 2;
+ z-index: 4;
 }
 /* Navbar */
 .navbari {
@@ -93,6 +93,7 @@ nav.awer {
 	width: 100%;
 	right: 0;
 	z-index: 2;
+	transition: all .5s ease;
 }
 .subnav-content a {
 	color: white;
@@ -179,6 +180,7 @@ font-size: 1.8em;
     padding:30px 0;
     color: white;
     position: relative;
+	z-index: 2;
 	border-top: 6px solid #6ffd32;
   }
   .footer .homi{

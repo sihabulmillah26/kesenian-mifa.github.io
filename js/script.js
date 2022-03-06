@@ -16,3 +16,24 @@ menuToggle.addEventListener("click", function () {
   nav.classList.toggle("awer");
 });
 
+
+const button = document.getElementById("btn");
+const drop = document.getElementById("myDropdown");
+
+button.addEventListener("click", function () { 
+  drop.classList.toggle("show");
+})
+
+const button2 = document.getElementById("btn1");
+const drop2 = document.getElementById("myDropdown1");
+
+button2.addEventListener("click", function () { 
+  drop2.classList.toggle("show");
+})
+
+const button3 = document.getElementById("btn2");
+const drop3 = document.getElementById("myDropdown2");
+
+button3.addEventListener("click", function () { 
+  drop3.classList.toggle("show");
+})

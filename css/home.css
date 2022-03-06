@@ -259,16 +259,22 @@ body {
 }
 .masjid{
   position: absolute;
-  width: 100%;
   top: 0;
   bottom: 0;
-  opacity: .2;
+  opacity: 0.2;
+  z-index: 1;
 }
+
 .kunjungi .gradasi {
   display: none;
   position: absolute;
   width: 100%;
+  z-index: 2;
   background: linear-gradient(0deg, #000 0%, #000 35%, rgba(0, 0, 0, 0.95) 50%, rgba(0, 0, 0, 0.85) 60%, rgba(0, 0, 0, 0.65) 75%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0) 99%);
+}
+.keterangan{
+position: relative;
+z-index: 2;
 }
 /* Akhir Kunjungi */
 
@@ -334,6 +340,7 @@ body {
   .hiasan img{
     top: 65%;
   }
+ 
 }
 @media (min-width:820px) {
   .hiasan img{
@@ -342,6 +349,7 @@ body {
   .teks-carousel{
     margin-left: 6%;
   }
+  
 }
 
 
@@ -403,15 +411,17 @@ body {
   .gallery{padding: 50px 0px 35px;}
   /* Akhir Gallery */
   .masjid{
-    width: auto;
-    top: 0;
+    top: 10%;
     opacity: 0.3;
     height: 99.5%;
+  }
+  .masjid img{
+    width: 100%;
   }
   .kunjungi .gradasi{
     display: block;
     height: 100px;
-    top: 83.5%;
+    top: 84%;
   }
  
 }
